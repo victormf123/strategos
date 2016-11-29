@@ -1,0 +1,1 @@
+[15-Sep-2016 19:34:20 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/viainfinda/public_html/wp-content/themes/viainfinda/index.php on line 1
