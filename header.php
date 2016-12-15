@@ -3,7 +3,7 @@
 <head>
     <link rel="sortcut icon" href="<?php bloginfo('template_url')?>/assets/images/thumbnail_ícone-site.png" type="image/png" />
 	<meta charset="UTF-8">
-	<title>Via Infinda</title>
+	<title>Strategos</title>
 
 	<?php wp_head(); ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -53,9 +53,29 @@
 </head>
 <body>
 <div class="header">
-	<nav id="meu" class="navbar navbar-default navbar-fixed-top">
+    <div class="row">
+        <div class="col-md-4">.col-md-1</div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="<?php bloginfo('template_url')?>/assets/images/Logo Strategos.png">
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+    </div>
+    
+</div>
+<div class="menu">
+     <div class="row">
+        <div class="col-md-3"><h1 = color:#FFFFFF>home</h1></div>
+        <div class="col-md-3"><h1>serviços</h1></div>
+        <div class="col-md-3"><h1>sobre</h1></div>
+        <div class="col-md-3"><h1>contato</h1></div>        
+    </div>
+</div>
+
+<!--<div class="topo">
+	<nav id="menu" class="navbar navbar-default">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -66,8 +86,8 @@
       <a class="navbar-brand col-xs-2" href="<?php bloginfo('url')?>"?><img class="img-responsive" src="<?php bloginfo('template_url')?>/assets/images/Logo.png"></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!-- Register Custom Navigation Walker -->
+    <!-- Collect the nav links, forms, and other content for toggling 
+    <!-- Register Custom Navigation Walker 
 	<?php require_once('assets/includes/wp_bootstrap_navwalker.php');?>
      <?php
             wp_nav_menu( array(
@@ -82,8 +102,8 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-  </div><!-- /.container-fluid -->
-</nav>
-</div>
+  </div><!-- /.container-fluid 
+</nav>-->
+
 
 	
