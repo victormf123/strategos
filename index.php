@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="slider conteiner-top">
+<!--<div class="slider conteiner-top">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
+	  <!-- Indicators 
 	  <ol class="carousel-indicators">
 	  	<?php 
 			$args = array('post_type'=>'slider', 'showposts'=>5);
@@ -18,7 +18,7 @@
 	     ?>
 	  </ol>
 
-	  <!-- Wrapper for slides -->
+	  <!-- Wrapper for slides 
 	  <div class="carousel-inner" role="listbox">
 		<?php 
 			$cont = 0 ; 
@@ -39,7 +39,7 @@
 
 	  </div>
 
-	  <!-- Controls -->
+	  <!-- Controls 
 	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 	    <span class="sr-only">Previous</span>
@@ -64,7 +64,7 @@
 		 	?>
 		 		<div class="col-md-12 col-lg-12">
 
-		 		<!-- Novo Código  -->
+		 		<!-- Novo Código  
 
 		 			<div class="posts">
 		 				<?php
@@ -115,12 +115,12 @@
 	    		endwhile;
 	    		endif;
 	     	?>
-	     	<div class="col-md-12 col-lg-12 text-center paginator"><!-- paginator	 -->
+	     	<div class="col-md-12 col-lg-12 text-center paginator"><!-- paginator	 
 	     			<?php wp_pagenavi(); ?>
 			</div>
 		</div>
 	</div>
-</div> 
+</div> -->
 
 <!--<div class="servicos">
 	<div class="container">
@@ -143,7 +143,7 @@
 	</div>
 </div>-->
 
-<div class="mais-populares">
+<!--<div class="mais-populares">
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-12 col-lg-12 text-center title-populares">
@@ -206,7 +206,7 @@
 	     	?>
 		</div>
 	</div>
-</div>
+</div>-->
 
 
 <?php get_footer(); ?>
