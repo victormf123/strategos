@@ -140,7 +140,7 @@ function clientes_registrer(){
 }
 
 /**************************************
- * Registro Custom Post type Clientes
+ * Registro Custom Post type Dados Empresa
  **************************************/
 add_action('init', 'dados_empresa_registrer');
 function dados_empresa_registrer(){
@@ -173,6 +173,42 @@ function dados_empresa_registrer(){
         'supports' => array('title','editor','thumbnail'),
     );
     register_post_type('dadosempresa',$args);
+}
+
+/**************************************
+ * Registro Custom Post type Sobre
+ **************************************/
+add_action('init', 'sobre_empresa_registrer');
+function sobre_empresa_registrer(){
+    $labels = array(
+        'name' => _x('Sobre Empresa', 'post type general name'),
+        'singular_name' => _x('sobreempresa', 'post type singular name'),
+        'add_new' => _x('Adicionar dados empresa', 'sobreempresa'),
+        'add_new_item' => __('Adicionar sobre empresa'),
+        'edit_item' => __('Editar sobre empresa'),
+        'new_item' => __('Novo sobre empresa'),
+        'view_item' => __('Ver sobre empresa'),
+        'search_items' => __('Procurar sobre empresa'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-welcome-view-site',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'sobreempresa'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('sobreempresa',$args);
 }
 
 /**************************************

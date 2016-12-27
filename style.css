@@ -7,7 +7,7 @@ Author URI: https://www.linkedin.com/in/matheus-freitas-32a705b4?trk=hp-identity
 Description: Tema Feito para a empresa Strategos
 Version: 0.1
 License: 
-License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a
+License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§a
 */
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
@@ -77,7 +77,7 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 
 .description{
 	background-color: white;
-	height: 338px;
+	height: 353px;
 }
 .thumbnail-category{
 	padding-left: 0px;
@@ -91,6 +91,8 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 	/*font-size: 10pt !important;*/
 	font-weight: 400 !important;
 	color: #f09b29;
+	width: 201px;
+
 
 }
 
@@ -122,7 +124,22 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
     // Clientes
 */
 .block-quard-clientes{
-    /*margin-right: 3%;*/
+	/*margin-right: 3%;*/
+}
+.clientes>h2{
+	font-family: Roboto !important;
+	font-size: 24pt !important;
+	font-weight: bold !important;
+	color: #444443;
+}
+#lista-de-baixo-clientes,#lista-de-baixo-clientes:hover{
+
+	font-family: Roboto !important;
+	font-size: 24pt !important;
+	font-weight: bold !important;
+	color: #444443;
+	text-decoration: none;
+	border-bottom: solid 6px #f19333;
 }
 
 /*
@@ -130,6 +147,7 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 */
 .footer{
 	background-color: #6b6b6b;
+	width: 100%;
 }
 
 .btn-enviar{
@@ -140,6 +158,62 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 .dados{
 	color: white;
 }
+.icons_redes{
+	margin-top: 15px;
+}
+#lista-de-baixo-contato,#lista-de-baixo-contato:hover{
 
+	font-family: Roboto !important;
+	font-size: 24pt !important;
+	font-weight: bold !important;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: solid 6px #f19333;
+}
+#contato-h2{
+	font-family: Roboto !important;
+	font-size: 24pt !important;
+	font-weight: bold !important;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
 
+/*
+	//SOBRE
+*/
+.sobre > a{
 
+	font-family: Roboto !important;
+	font-size: 16pt !important;
+	font-weight: bold !important;
+	color: #444443;
+	text-decoration: none;
+}
+.sobre > a:hover{
+	border-bottom: solid 6px #f19333;
+}
+.sobre > a:visited{
+	border-bottom: solid 6px #f19333;
+}
+.sobre > a:link{
+	border-bottom: solid 6px #f19333;
+}
+.sobre > a:active{
+	border-bottom: solid 6px #f19333;
+}
+
+.description-sobre{
+	margin-top: 50px;
+	margin-left: 5%;
+}
+.mej{
+	font-family: Roboto !important;
+	font-size: 18pt !important;
+	font-weight: bold !important;
+	color: #444443;
+	margin-top: 50px;
+}
+.space-bottom-mej{
+	margin-top: 100px;
+	margin-bottom: 150px;
+}

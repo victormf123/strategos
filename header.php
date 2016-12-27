@@ -4,11 +4,11 @@
     <link rel="sortcut icon" href="<?php bloginfo('template_url')?>/assets/images/thumbnail_ícone-site.png" type="image/png" />
 	<meta charset="UTF-8">
 	<title>Strategos</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url')?>/assets/js/functions_page.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/style.css"/>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/assets/css/MathStyleSheet.css"/>
+    <script type="text/javascript" src="<?php bloginfo('template_url')?>/assets/js/funcionalidades.js"></script>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
 </div>
 <nav id="menu" class="navbar menu">
   <div class="container-fluid">
-      <div class="col-md-12 conreiner-menu">
+      <div class="">
           <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display-->
                 <div class="navbar-header">
