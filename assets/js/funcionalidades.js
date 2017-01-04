@@ -29,6 +29,11 @@ $(document).ready(function () {
 		$('#row2').hide();
 		$('#row3').show();
 	});
+	$('#menu-item-89').click(function () {
+		$("html, body").animate({
+			scrollTop: $("#footer").offset().top
+		}, 200);
+	});
 });
 
 

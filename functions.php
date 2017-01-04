@@ -212,6 +212,42 @@ function sobre_empresa_registrer(){
 }
 
 /**************************************
+ * Registro Custom Post type Home
+ **************************************/
+add_action('init', 'home_empresa_registrer');
+function home_empresa_registrer(){
+    $labels = array(
+        'name' => _x('Home Empresa', 'post type general name'),
+        'singular_name' => _x('homeempresa', 'post type singular name'),
+        'add_new' => _x('Adicionar home empresa', 'homeempresa'),
+        'add_new_item' => __('Adicionar home empresa'),
+        'edit_item' => __('Editar home empresa'),
+        'new_item' => __('Novo home empresa'),
+        'view_item' => __('Ver home empresa'),
+        'search_items' => __('Procurar home empresa'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-index-card',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'homeempresa'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('homeempresa',$args);
+}
+
+/**************************************
  * Registro Custom Post type POPULARES
  **************************************
 add_action('init', 'single_page_mais_registrer');

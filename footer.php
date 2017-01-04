@@ -1,6 +1,6 @@
 
 	<?php wp_footer(); ?>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="col-md-offset-1 space-top">
 				<div class="row">
 					<div class="col-md-4  space-top-bottom">
@@ -26,11 +26,11 @@
 					</div>
 					<div class="col-md-2 space-top-bottom-dados">
 						<?php
-						$cont_clientes;
+						$cont_dados;
 						$args = array('post_type'=>'dadosempresa', 'showposts'=>-1);
-						$my_clientes = get_posts( $args );
-						if($my_clientes) : foreach($my_clientes as $post) : setup_postdata( $post );
-							$cont_clientes++;
+						$my_dados = get_posts( $args );
+						if($my_dados) : foreach($my_dados as $post) : setup_postdata( $post );
+							$cont_dados++;
 
 							?>
 							<div class="row">
