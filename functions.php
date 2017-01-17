@@ -102,6 +102,151 @@ function servicos_registrer(){
       );
     register_post_type('servicos',$args);
 }
+
+/**************************************
+ * Registro Custom Post type Clientes
+ **************************************/
+add_action('init', 'clientes_registrer');
+function clientes_registrer(){
+    $labels = array(
+        'name' => _x('Clientes', 'post type general name'),
+        'singular_name' => _x('Clientes', 'post type singular name'),
+        'add_new' => _x('Adicionar clientes', 'clientes'),
+        'add_new_item' => __('Adicionar clientes'),
+        'edit_item' => __('Editar clientes'),
+        'new_item' => __('Novo clientes'),
+        'view_item' => __('Ver clientes'),
+        'search_items' => __('Procurar clientes'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-businessman',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'clientes'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('clientes',$args);
+}
+
+/**************************************
+ * Registro Custom Post type Dados Empresa
+ **************************************/
+add_action('init', 'dados_empresa_registrer');
+function dados_empresa_registrer(){
+    $labels = array(
+        'name' => _x('Dados Empresa', 'post type general name'),
+        'singular_name' => _x('dadosempresa', 'post type singular name'),
+        'add_new' => _x('Adicionar dados empresa', 'clientes'),
+        'add_new_item' => __('Adicionar dados empresa'),
+        'edit_item' => __('Editar dados empresa'),
+        'new_item' => __('Novo dados empresa'),
+        'view_item' => __('Ver dados empresa'),
+        'search_items' => __('Procurar dados empresa'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-building',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'dadosempresa'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('dadosempresa',$args);
+}
+
+/**************************************
+ * Registro Custom Post type Sobre
+ **************************************/
+add_action('init', 'sobre_empresa_registrer');
+function sobre_empresa_registrer(){
+    $labels = array(
+        'name' => _x('Sobre Empresa', 'post type general name'),
+        'singular_name' => _x('sobreempresa', 'post type singular name'),
+        'add_new' => _x('Adicionar dados empresa', 'sobreempresa'),
+        'add_new_item' => __('Adicionar sobre empresa'),
+        'edit_item' => __('Editar sobre empresa'),
+        'new_item' => __('Novo sobre empresa'),
+        'view_item' => __('Ver sobre empresa'),
+        'search_items' => __('Procurar sobre empresa'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-welcome-view-site',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'sobreempresa'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('sobreempresa',$args);
+}
+
+/**************************************
+ * Registro Custom Post type Home
+ **************************************/
+add_action('init', 'home_empresa_registrer');
+function home_empresa_registrer(){
+    $labels = array(
+        'name' => _x('Home Empresa', 'post type general name'),
+        'singular_name' => _x('homeempresa', 'post type singular name'),
+        'add_new' => _x('Adicionar home empresa', 'homeempresa'),
+        'add_new_item' => __('Adicionar home empresa'),
+        'edit_item' => __('Editar home empresa'),
+        'new_item' => __('Novo home empresa'),
+        'view_item' => __('Ver home empresa'),
+        'search_items' => __('Procurar home empresa'),
+        'not_found' =>  __('Nada encontrado'),
+        'not_found_in_trash' => __('Nada encontrado no lixo'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-index-card',
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug'=>'homeempresa'),
+        'menu_position' => 6,
+        'supports' => array('title','editor','thumbnail'),
+    );
+    register_post_type('homeempresa',$args);
+}
+
 /**************************************
  * Registro Custom Post type POPULARES
  **************************************

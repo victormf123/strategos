@@ -1,0 +1,38 @@
+.space-top{
+    margin-top: 100px;
+}
+.space-bottom{
+    margin-top: 100px;
+}
+.space-top-bottom{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.space-top-500{
+    margin-top: 500px;
+}
+
+#lista-de-baixo{
+    z-index: -1;
+    border-top: solid 6px #f19333;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 0px;
+}
+
+.space-top-bottom-dados{
+    margin-top: 230px;
+}
+#lista-de-baixo-enviar{
+    z-index: -1;
+    border-top: solid 6px #f19333;
+    /* margin-left: 15%; */
+    margin-right: 77%;
+    padding: 0px;
+    margin-top: -11px;
+    margin-bottom: 11px;
+}
+.big-space-top-bottom{
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
