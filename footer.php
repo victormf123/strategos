@@ -5,22 +5,25 @@
 				<div class="row">
 					<div class="col-md-4  space-top-bottom">
 						<h2 id="contato-h2"><a id="lista-de-baixo-contato" >Mande</a> sua mensagem</h2>
-						<form>
+						
+						<form action="<?php bloginfo('template_url')?>/assets/enviar.php" name="Mande sua mensagem" method="post">	
+
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome">
+								<input type="text" name="nome" class="form-control" id="exampleInputEmail1" placeholder="Nome">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+								<input type="email" name="email"class="form-control" id="exampleInputEmail1" placeholder="Email">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Telefone">
+								<input type="text" name="telefone" class="form-control" id="exampleInputPassword1" placeholder="Telefone">
 							</div>
 							<div class="form-group">
-								<textarea placeholder="Mensagem" class="form-control" rows="3"></textarea>
+								<textarea name="mensagem" placeholder="Mensagem" class="form-control" id="exampleInputEmail1" rows="3"></textarea>
 							</div>
 
 								<button type="submit" class="btn btn-default btn-lg btn-block btn-enviar">ENVIAR</button>
 
+									
 						</form>
 
 					</div>
