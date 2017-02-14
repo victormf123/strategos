@@ -23,7 +23,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 thumbnail-category">
+                            <div class="col-md-6 thumbnail-category">   
                                 <?php the_post_thumbnail(false, array('class'=>'img-responsive'));?>
                             </div>
                         </div>
