@@ -48,14 +48,12 @@
 						?>
 					</div>
 					<div class="col-md-4 col-md-offset-1 space-top-bottom">
-						<svg id="svgelem"  width="450" height="450" xmlns="http://www.w3.org/2000/svg">
-								<section class="map">
+					<section class="map">
 									<div class="mapWrapper">
 										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8640600655776!2d-47.871766085343836!3d-15.758329026266567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb883ff2933%3A0x7c1e4f52a81f06ae!2sInstituto+de+Ci%C3%AAncia+Pol%C3%ADtica+(IPOL)!5e0!3m2!1spt-BR!2sbr!4v1487087543596" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 									</div>	
 								</section>
-							<rect class="map" id="redrect" width="450" height="450" fill="white" />
-						</svg>
+						
 						<div class="row icons_redes">
 							<div class="col-md-2 ">
 								<a href="">
