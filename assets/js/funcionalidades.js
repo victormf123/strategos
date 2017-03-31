@@ -9,7 +9,7 @@ $(document).ready(function () {
 	$('.servico8').hide();
 	$('.servico9').hide();
 	$('.servico10').hide();
-
+  
 	$('.bt-servicos1').click(function () {
 		$('.servico1').fadeToggle('slow');
 	});
