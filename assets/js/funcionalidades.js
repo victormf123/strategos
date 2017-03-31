@@ -1,5 +1,48 @@
 
 $(document).ready(function () {
+	$('.servico1').hide();
+	$('.servico2').hide();
+	$('.servico3').hide();
+	$('.servico4').hide();
+	$('.servico5').hide();
+	$('.servico6').hide();
+	$('.servico7').hide();
+	$('.servico8').hide();
+	$('.servico9').hide();
+	$('.servico10').hide();
+
+	$('.bt-servicos1').click(function () {
+		$('.servico1').fadeToggle('slow');
+	});
+	$('.bt-servicos2').click(function () {
+		$('.servico2').fadeToggle('slow');
+	});
+	$('.bt-servicos3').click(function () {
+		$('.servico3').fadeToggle('slow');
+	});
+	$('.bt-servicos4').click(function () {
+		$('.servico4').fadeToggle('slow');
+	});
+	$('.bt-servicos5').click(function () {
+		$('.servico5').fadeToggle('slow');
+	});
+	$('.bt-servicos6').click(function () {
+		$('.servico6').fadeToggle('slow');
+	});
+	$('.bt-servicos7').click(function () {
+		$('.servico7').fadeToggle('slow');
+	});
+	$('.bt-servicos8').click(function () {
+		$('.servico8').fadeToggle('slow');
+	});
+	$('.bt-servicos9').click(function () {
+		$('.servico9').fadeToggle('slow');
+	});
+	$('.bt-servicos10').click(function () {
+		$('.servico10').fadeToggle('slow');
+	});
+
+
 	$("#fade").fadeIn("slow");
 
 	$('#row1').show();
