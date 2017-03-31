@@ -1,7 +1,9 @@
 
-$(document).ready(function () {
-	$("#fade").fadeIn("slow");
 
+$(document).ready(function () {
+	$("#conteiner-post").hide();
+	$("#conteiner-post").fadeIn("slow");
+    
 	$('#row1').show();
 	$('#a1').css('border-bottom', 'solid 6px #f19333');
 	$('#row2').hide();

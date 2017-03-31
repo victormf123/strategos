@@ -3,6 +3,7 @@
         <div class="row top">
             <div class="col-md-12 container-fluid top">
                 <img id="fundo_principal" class="img-responsive" src="<?php bloginfo('template_url')?>/assets/images/fundo_principal.png">
+
                 <?php
                 $cont_top = 0;
                 while ( have_posts() ) : the_post();
