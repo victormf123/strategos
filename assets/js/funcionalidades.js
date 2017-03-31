@@ -1,6 +1,3 @@
-
-<<<<<<< HEAD
-=======
 $(document).ready(function () {
 	$('.servico1').hide();
 	$('.servico2').hide();
@@ -12,7 +9,7 @@ $(document).ready(function () {
 	$('.servico8').hide();
 	$('.servico9').hide();
 	$('.servico10').hide();
-
+  
 	$('.bt-servicos1').click(function () {
 		$('.servico1').fadeToggle('slow');
 	});
@@ -44,11 +41,6 @@ $(document).ready(function () {
 		$('.servico10').fadeToggle('slow');
 	});
 
-
-	$("#fade").fadeIn("slow");
->>>>>>> refs/remotes/origin/master
-
-$(document).ready(function () {
 	$("#conteiner-post").hide();
 	$("#conteiner-post").fadeIn("slow");
     
