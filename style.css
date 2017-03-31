@@ -106,7 +106,7 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 	width: 100%;
 }
 .servicos{
-	margin-top: 164px;
+	margin-top: 185px;
 }
 .servicos-post{
 	margin-right: 10%;
@@ -118,6 +118,28 @@ License url da licenÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’
 	font-size: 16pt !important;
 	font-weight: bold !important;
 	color: #727272;
+}
+
+/*
+    // Servicos
+*/
+
+.descricao-servicos{
+	position: absolute;
+	background-color: #fb9e00;
+	margin-top: 95px;
+}
+.remove-servico{
+	float: right;
+	margin-top: 5px;
+	color: #ffffff;
+}
+.remove-servico:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+.espaco-top{
+	margin-top: 25px;
 }
 
 /*

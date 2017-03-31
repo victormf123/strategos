@@ -48,29 +48,56 @@
                         <div class="row">
                             <?php
                             $cont;
+                            $cont_servicos;
+
                             $args = array('post_type'=>'servicos', 'showposts'=>-1);
                             $my_servicos = get_posts( $args );
                             if($my_servicos) : foreach($my_servicos as $post) : setup_postdata( $post );
                                 $cont++;
+                                $cont_servicos++;
                                 if ($cont < 2):
                                     ?>
                                     <div class="servicos">
-                                        <div class="col-md-1 ">
-                                            <?php the_post_thumbnail(false, array('class'=>'img-responsive'));?>
-                                        </div>
-                                        <div class="col-md-3 servicos-post">
-                                            <p><?php the_title();?></p>
+                                        <a class="bt-servicos<?php echo $cont_servicos?>">
+                                            <div class="col-md-1 ">
+                                                <?php the_post_thumbnail(false, array('class'=>'img-responsive'));?>
+                                            </div>
+                                            <div class="col-md-3 servicos-post">
+                                                <p><?php the_title();?></p>
+                                            </div>
+                                        </a>
+                                        <div class="servico<?php echo $cont_servicos?>">
+                                            <div class="descricao-servicos">
+                                                <div class="container-fluid">
+                                                    <a class="remove-servico bt-servicos<?php echo $cont_servicos?>">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                    </a>
+                                                    <p class="espaco-top text-justify"><?php the_content();?></p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 <?php else:
                                     $cont = 0;
                                     ?>
                                     <div class="row servicos">
-                                        <div class="col-md-1">
-                                            <?php the_post_thumbnail(false, array('class'=>'img-responsive'));?>
-                                        </div>
-                                        <div class="col-md-3 servicos-post">
-                                            <p><?php the_title();?></p>
+                                        <a class="bt-servicos<?php echo $cont_servicos?>">
+                                            <div class="col-md-1 ">
+                                                <?php the_post_thumbnail(false, array('class'=>'img-responsive'));?>
+                                            </div>
+                                            <div class="col-md-3 servicos-post">
+                                                <p><?php the_title();?></p>
+                                            </div>
+                                        </a>
+                                        <div class="servico<?php echo $cont_servicos?>">
+                                            <div class="descricao-servicos">
+                                                <div class="container-fluid">
+                                                    <a class="remove-servico bt-servicos<?php echo $cont_servicos?>">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                    </a>
+                                                    <p class="espaco-top text-justify"><?php the_content();?></p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 <?php endif;?>
