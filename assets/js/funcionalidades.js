@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 	$('.servico1').hide();
 	$('.servico2').hide();
@@ -42,9 +41,9 @@ $(document).ready(function () {
 		$('.servico10').fadeToggle('slow');
 	});
 
-
-	$("#fade").fadeIn("slow");
-
+	$("#conteiner-post").hide();
+	$("#conteiner-post").fadeIn("slow");
+    
 	$('#row1').show();
 	$('#a1').css('border-bottom', 'solid 6px #f19333');
 	$('#row2').hide();
